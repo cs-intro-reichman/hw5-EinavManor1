@@ -61,7 +61,7 @@ public class ScrabbleTest {
         
         // Test multiple hands
         for (int i = 0; i < 3; i++) {
-            String hand = Scrabble.createHand();
+            String hand = Scrabble.createHand("n");
             System.out.println("\nHand " + (i+1) + ":");
             
             // Validate each hand
