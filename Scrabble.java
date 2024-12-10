@@ -89,7 +89,7 @@ public class Scrabble {
 			String randomHand = MyString.randomStringOfLetters(HAND_SIZE - 2);
 			randomHand = MyString.insertRandomly('a', randomHand);
 			hand = MyString.insertRandomly('e', randomHand);
-			System.out.println(hand);
+			//System.out.println(hand);
 	    return hand;
 		}
 	    return " ";
@@ -118,7 +118,7 @@ public class Scrabble {
             if (isWordInDictionary(input) && MyString.subsetOf(input, hand)) {
                 int wordScore = wordScore(input);
                 score += wordScore;
-				//System.out.println(input+ " earned " + wordScore +" points. Score: " + score + " points");
+				System.out.println(input+ " earned " + wordScore +" points. Score: " + score + " points");
                 hand = MyString.remove(hand, input); 
 				System.out.println();
             } else {
