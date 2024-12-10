@@ -155,7 +155,8 @@ public class Scrabble {
                         break;
                     default:
                         System.out.println("Invalid input. Please enter 'n' or 'e'.");
-                        break;
+                        System.out.println();
+						break;
                 }
             }
 	}
